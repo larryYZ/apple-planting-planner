@@ -34,8 +34,92 @@ header h1 {
   margin-left: 30px;
 }
 
+.main {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+/* cart tut */
+h1 {
+  margin: 10px;
+  font-size: 40px;
+  color: rgb(1, 1, 59);
+}
+
+h2, h3 {
+  margin: 0.5rem 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-1 {
+  flex: 1;
+}
+
+.col-2 {
+  flex: 2;
+}
+
+.block {
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.row.center {
+  align-items: center;
+}
+
+.add-button {
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  margin-right: 0.8rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #404040 solid;
+  background-color: #f0c040;
+  cursor: pointer;
+  height: 1.5rem;
+}
+
+button.add {
+  background-color: #40c0f0;
+  width: 1.5rem;
+}
+
+button.remove {
+  background-color: #f04040;
+  width: 1.5rem;
+}
+
+button.badge {
+  background-color: #f04040;
+  width: 1.5rem;
+  color: #ffffff;
+  border: none;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* search */
+
+.search {
+  width: 30%;
+}
+
+ul li {
+  font-size: 20px;
+} 
+
 footer {
-  position: absolute;
+  /* position: absolute; */
   text-align: center;
   bottom: 0;
   width: 100%;
@@ -44,5 +128,31 @@ footer {
 
 footer p {
   color: #ccc;
+}
+
+* {
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* Planner */
+.app {
+  font-family: sans-serif;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+@media screen and (min-width: 1000px) {
+  .app {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 32px;
 }
 

@@ -77,12 +77,15 @@ export const buildElements = tree => {
   } else if (tree.bloom === 'early mid') {
     start = createDate(START_YEAR, 4, 15);
     end = createDate(START_YEAR, 4, 28);
-  } else if ("late") {
+   } else if (tree.bloom === "late") {
     start = createDate(START_YEAR, 5, 2);
     end = createDate(START_YEAR, 5, 12);
-  } else {
+  } else if (tree.bloom === "mid late") {
     start = createDate(START_YEAR, 4, 29);
     end = createDate(START_YEAR, 5, 8);
+  } else {
+    start = createDate(START_YEAR, 4, 1);
+    end = createDate(START_YEAR, 5, 28);
   }
 
   v.push(

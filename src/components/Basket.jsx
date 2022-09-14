@@ -8,7 +8,10 @@ export default function Basket(props) {
       <div>
         {cartItems.length === 0 && <div>Cart Is Empty</div>}
         {cartItems.map((tree) => (
-            <p><button onClick={() => onRemove(tree)} className="add-button">-</button> {tree.variety}</p>
+          <div className="cart-item">
+            <button onClick={() => onRemove(tree)} className="remove-button">-</button>
+            {tree.variety}
+          </div>
         ))}
       </div>
     </aside>

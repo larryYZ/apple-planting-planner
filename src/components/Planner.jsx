@@ -50,11 +50,11 @@ function Planner(props) {
     
   }
 
-  const start = new Date(`${START_YEAR}`)
-  const end = new Date(`${START_YEAR + NUM_OF_YEARS}`)
+  const start = new Date(`${START_YEAR}-4`)
+  const end = new Date(`${START_YEAR}-12`)
   return (
     <div className="app">
-      <h1 className="title">Apple Tree Bloom & Harvest Timeline</h1>
+      <h1 className="title"> Apple Tree Bloom & Harvest Timeline</h1>
       <Timeline
         scale={{
           start,

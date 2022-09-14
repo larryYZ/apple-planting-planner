@@ -10,7 +10,7 @@ export default function AppleTrees(props) {
   let [searchParams, setSearchParams] = useSearchParams();
 
   return (
-    <div style={{ display: "flex" }}>
+    <div className="apple-trees-section" style={{ display: "flex" }}>
       {props.loading && <div>A moment please...</div>}
       {props.error && (
         <div>{`There is a problem fetching the post data - ${props.error}`}</div>

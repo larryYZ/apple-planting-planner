@@ -74,6 +74,7 @@ h2, h3 {
 
 .block {
   padding: 1rem;
+  margin-left: 20px;
 }
 
 .row.center {
@@ -167,3 +168,6 @@ footer p {
   font-size: 2rem;
 }
 
+.apple-trees-section {
+  margin-left: 20px;
+}

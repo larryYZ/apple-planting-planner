@@ -38,12 +38,13 @@ export default function AppleTreeVariety(props) {
         <div>{`There is a problem fetching the post data - ${error}`}</div>
       )}
       {data && (
-        <div>
+        <div className="apple-info">
           <h2>Apple Tree Variety: {data.variety}</h2>
           <p>Zone: {data.zone}</p>
           <p>Taste: {data.taste}</p>
           <p>Bloom Time: {data.bloom}</p>
           <p>Harvest Time: {data.harvest}</p>
+          <p>Description: {data.description}</p>
         </div>)}
     </main>
   

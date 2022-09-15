@@ -28,28 +28,28 @@ function App(){
     }
   }
 
-  // useEffect(() => {
-  //   fetch(`https://fruit-trees-api.herokuapp.com/appleTrees`)
-  //   .then((response) => {
-  //     if (!response.ok) {
-  //       throw new Error(
-  //         `This is an HTTP error: The status is ${response.status}`
-  //       );
-  //     }
-  //     return response.json();
-  //   })
-  //   .then((actualData) => {
-  //     setData(actualData);
-  //     setError(null);
-  //   })
-  //   .catch((err) => {
-  //     setError(err.message);
-  //     setData(null);
-  //   })
-  //   .finally(() => {
-  //     setLoading(false);
-  //   });
-  // }, []);
+  useEffect(() => {
+    fetch(`https://fruit-trees-api.herokuapp.com/appleTrees`)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(
+          `This is an HTTP error: The status is ${response.status}`
+        );
+      }
+      return response.json();
+    })
+    .then((actualData) => {
+      setData(actualData);
+      setError(null);
+    })
+    .catch((err) => {
+      setError(err.message);
+      setData(null);
+    })
+    .finally(() => {
+      setLoading(false);
+    });
+  }, []);
 
 
   return <div>
